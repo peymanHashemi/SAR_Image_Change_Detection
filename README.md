@@ -12,9 +12,13 @@ One major improvement introduced in this project is the use of advanced denoisin
 The implementation is structured in Python, with dependencies including libraries like OpenCV, Scikit-learn, and NumPy. The algorithm was applied to several datasets mentioned in the original paper, including the Ottawa, Bern, and Yellow River datasets. In this repository, I provide scripts that reproduce the original results and also showcase the improvements achieved through advanced filtering and denoising. The key implementation stages include:
 
 1- Preprocessing of SAR images.
+
 2- Morphological filtering with optimized parameters.
+
 3- Ratio calculation for identifying changes.
-- K-Means clustering to classify pixels into change/no-change clusters.
+
+4- K-Means clustering to classify pixels into change/no-change clusters.
+
 ## 5. Performance and Results
 The accuracy improvements were validated using multiple SAR datasets. By applying enhanced denoising and optimized kernel sizes, the detection accuracy showed a noticeable improvement. For example, in the Ottawa dataset, the accuracy reached 97.02% with a kappa coefficient of 0.8871, surpassing the results from the original implementation. These results show that by refining the noise removal process and adjusting the clustering algorithm’s parameters, a more robust change detection can be achieved.
 
